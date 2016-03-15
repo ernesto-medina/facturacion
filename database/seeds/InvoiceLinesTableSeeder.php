@@ -28,7 +28,7 @@ class InvoiceLinesTableSeeder extends Seeder
         $product_id = \DB::table('products')->insertGetId(array(
             'name'              => $faker->firstName,
             'description'       => $faker->catchPhrase,
-            'img'               => $faker->image,
+            'img'               => $faker->imageUrl($width = 640, $height = 480),
             'unit_cost'         => $faker->randomFloat,
             'company_id'        => $company_id
             ));

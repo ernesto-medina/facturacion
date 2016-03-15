@@ -41,7 +41,7 @@ class PartnerTableSeeder extends Seeder
     		'phone'		=> $faker->phoneNumber,
             'razon_s'   => $faker->firstName,
             'rfc'       => $faker->firstName,
-    		'img'    	=> $faker->image,
+    		'img'    	=> $faker->imageUrl($width = 640, $height = 480),
             'company_id'=> $company_id
     		));
     }
